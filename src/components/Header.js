@@ -21,7 +21,7 @@ export function Header(){
                 <div className={`${styles.search} ${open ? styles.active : ""}`}>
                     <input 
                         type="text" 
-                        placeholder="Buscar filmes..."
+                        placeholder="Search movies..."
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                     />
