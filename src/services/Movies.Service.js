@@ -7,3 +7,11 @@ export function getPopularMovies(){
 export function getMovie(movieId) {
     return moviesApis.get(`movie/${movieId}`)
 }
+
+export function searchMovies(query) {
+    return moviesApis.get("/search/movie", {
+        params: {
+            query
+        }
+    });
+}

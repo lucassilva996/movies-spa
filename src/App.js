@@ -1,9 +1,12 @@
 import { RouterProvider } from 'react-router-dom';
-import { Routes } from './Routes';
+import { Routes } from './routes';
+import { SearchProvider } from './components/SearchContext';
 
 function App() {
   return (
-    <RouterProvider router={Routes}/>
+    <SearchProvider>
+      <RouterProvider router={Routes}/>
+    </SearchProvider>
   );
 }
 
